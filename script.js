@@ -11,7 +11,7 @@ const place=[
         Details:"Kakki Dam, located in the Pathanamthitta district, is a scenic hydroelectric dam surrounded by verdant forests and hills. Known for its tranquil reservoir and breathtaking views, it is a popular spot for nature lovers and photographers seeking peace and natural beauty."
     }
 ];
-const Mainplace=["Kakki Dam","Adavi","Athirapally Waterfalls"];
+const Mainplace=["Kakki Dam","Adavi","Charalkunnu Hills"];
 const PlaceTitle=document.getElementById("Place-Title");
 const PlaceDesc=document.getElementById("Place-Desc");
 const MainPlaceName=document.getElementById("Place-Name");
