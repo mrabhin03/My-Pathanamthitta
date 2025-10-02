@@ -20,6 +20,7 @@ var coverflowSettings = {
     depth: 300,
     modifier: 2
   };
+
   if(window.innerWidth<550){
     coverflowSettings.stretch=15
   }
