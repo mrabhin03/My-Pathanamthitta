@@ -1,0 +1,409 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+   user-select: none;      
+  -webkit-user-drag: none;
+}
+@font-face {
+  font-family: 'Pristina';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Pristina'), url('../Assets/PRISTINA.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    position: relative; 
+    background: #f9f9f9; 
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('../Assets/KakkiDam.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .1; 
+    
+    z-index: -1; 
+}
+.imageScroll{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.838);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.swiper2 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+  aspect-ratio:16/9;
+}
+.swiper2{
+  width: 100%;
+  height: 100%;
+}
+.swiper2 .swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  overflow: hidden;
+  width: 100%;
+  height: 650px;
+  /* background-image: url('../Assets/MainBackground.png'); */
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 40px;
+}
+.bgcover{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* backdrop-filter: blur(2px); */
+}
+.bgcover > nav{
+  width: 100%;
+  padding: 8px 20px ;
+  background-color: rgba(0, 0, 0, 0.458);
+}
+.bgcover nav > img{
+  height: 40px;
+}
+.titles{
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  box-sizing: border-box;
+  color: white !important;
+}
+.titles h1,.titles h2,.titles h3{
+  text-shadow: 2px 2px 5px black;
+  font-weight: 500 !important;
+  color: white !important;
+}
+.titles h2{
+  font-family:'Pristina' !important;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+.titles h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  font-style: normal;
+  margin-top: -20px;
+  margin-bottom: -7px;
+}
+.titles h3{
+  font-size: 16px;
+}
+
+.titles button{
+  padding: 5px 20px ;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  border-radius: 5px;
+  background-color: #046C39;
+  color: white;
+}
+.bgcover {
+   position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; 
+}
+
+.change-buttons {
+  position: absolute;
+  bottom: 0;          
+  left: 50%; 
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px !important;
+  box-sizing: border-box;
+  height: fit-content;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+  gap: 0px;
+}
+.change-buttons div{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;
+}
+#Place-Name{
+  font-size: 16px;
+  margin: 0;
+  text-shadow: 0px 0px 8px black;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+.MainImageOptions {
+  width: fit-content; 
+  margin: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.192);
+  padding: 5px;
+  border-radius: 8px;
+}
+.change-buttons .swiper2-button-prev:after, 
+.change-buttons .swiper2-button-next:after {
+  display: none; 
+}
+.change-buttons .swiper2-button-prev.slider-arrow,.change-buttons .swiper2-button-next.slider-arrow{
+  background-color: rgba(0, 0, 0, 0.449) !important;
+  text-shadow: 1px 1px 8px black;
+  display: grid;
+  place-content: center;
+  padding: 3px ;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ .change-buttons .swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.226) !important;
+  transition: all.2s ease-in-out;
+  margin: 0;
+  opacity: 1 !important;
+  outline: 1px solid white;
+  box-sizing: border-box;
+}
+.change-buttons .swiper-pagination-bullet-active {
+  background: #ffffff !important;
+}
+
+.about{
+  max-width: 1400px;
+  padding: 40px ;
+  box-sizing: border-box;
+  display: flex;
+  gap: 50px;
+}
+.about img{
+  aspect-ratio:16/9;
+  height: 330px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+}
+.about h1{
+  color: #046C39;
+  font-size: 35px;
+}
+.about p{
+  font-size: 17px;
+}
+
+.destignation{
+  max-width: 1400px;
+  padding: 20px 40px ;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.destignation h1{
+  font-size: 30px;
+  color: #046C39;
+}
+.swiper .swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper .swiper-slide img{
+  width: auto;
+  height: 350px;
+  border-radius: 10px;
+  aspect-ratio:16/9;
+}
+.swiper .slider-control-Panel{
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.swiper{
+  max-width: 900px;
+}
+
+.swiper .swiper-button-prev:after, 
+.swiper .swiper-button-next:after {
+  display: none; 
+}
+.swiper .swiper-button-prev.slider-arrow,.swiper .swiper-button-next.slider-arrow{
+  font-size: 40px;
+  width: 20px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  place-items: center;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 5px;
+  transform: translateY(-25%);
+}
+.swiper .swiper-button-prev:hover,.swiper .swiper-button-next:hover{
+  transform: scale(1.05) translateY(-25%);
+  background-color: rgb(0, 0, 0);
+}
+.swiper .swiper-button-prev:active{
+color: rgb(204, 204, 204);
+transform: scale(.98) translateX(-5px) translateY(-25%);
+}
+.swiper .swiper-button-next:active{
+  color: rgb(204, 204, 204);
+  transform: scale(.98) translateX(5px) translateY(-25%);
+}
+ .swiper .swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.229) !important;
+  transition: all.2s ease-in-out;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0;
+  opacity: 1 !important;
+}
+.swiper .theobjects{
+  margin-top: 10px;
+}
+.swiper .swiper-pagination-bullet-active {
+  background: #0eab28 !important;
+}
+
+.destignation h2{
+  font-size: 30px;
+  color: #046C39;
+}
+.destignation button{
+  width: fit-content;
+  outline: none;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 5px;
+  background-color: #046C39;
+  color: white;
+}
+@media (max-width:990px) {
+  .about{
+    flex-direction: column;
+  }
+  .about img{
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width:700px) {
+  .swiper .swiper-slide img {
+    height: 150px;
+  }
+  .header{
+    height: 350px;
+    margin-bottom: 40px;
+  }
+  .change-buttons .swiper2-button-prev.slider-arrow,.change-buttons .swiper2-button-next.slider-arrow{
+    background-color: rgba(0, 0, 0, 0.449) !important;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+ .change-buttons .swiper-pagination-bullet {
+    width: 5px !important;
+    height: 5px !important;
+    margin: 0 !important;
+  }
+}
+@media (max-width:540px) {
+  .titles{
+    padding: 20px;
+  }
+  .titles h2{
+    font-size: 30px;
+  }
+  .titles h1{
+    margin-top: -10px;
+    margin-bottom: -4px;
+    font-size: 30px;
+  }
+  .titles h3{
+    font-size: 14px;
+  }
+  .about h1{
+    font-size: 20px;
+  }
+  .about p,.destignation p{
+    font-size: 14px;
+  }
+  #Place-Name{
+    font-size: 10px;
+  }
+  .destignation h1{
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .destignation h2{
+    font-size: 20px;
+  }
+  .swiper .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+  }
+  .destignation{
+    padding: 0;
+  }
+  #Place-Title,#Place-Desc,.destignation h1,.about{
+    padding:  0 20px;
+  }
+  .titles button{
+    font-size: 10px;
+  }
+  .destignation button{
+    margin-left: 20px;
+    font-size: 12px;
+  }
+}

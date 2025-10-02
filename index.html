@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pathanamthitta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Mainstyles.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <section class="header">
+    <div class="imageScroll">
+      <div class="swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="Assets/KakkiDam.webp" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="Assets/Adavi.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="Assets/Waterfalls.png" alt="" srcset=""></div>
+        </div>
+      </div>
+    </div>
+     <div class="bgcover">
+      <div style="background-color: #00000042; padding-left: 20px; padding: 0;" class="container-fluid position-relative">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="" class="navbar-brand text-secondary">
+                    <img class="Header-Images"  src="Assets/Tourism ClubLo.png" alt="" srcset="">
+                </a>
+                <!-- <label class="hamburger navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+                    <input onchange="menudata(this)" type="checkbox" id="menuIcon">
+                    <svg viewBox="0 0 32 32">
+                      <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                      <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0 pl-2 border-right">
+                        <a href="" onclick="CloseMenu()" class="nav-item nav-link active">Home</a>
+                        <a href="#About" onclick="CloseMenu()" class="nav-item nav-link">About</a>
+                        <a href="#Services" onclick="CloseMenu()" class="nav-item nav-link">Services</a>
+                        <a href="#Contact" onclick="CloseMenu()" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-lg-flex align-items-center pl-4" style="color: white;">
+                        <i class="fab fa-2x fa-whatsapp mr-3"></i>
+                        <div>
+                            <a target="_blank" href="https://wa.me/+919447709944?text=hi">
+                            <h6 class="text-uppercase mb-1" style="color: rgb(218, 218, 218);"><small>WhatsApp</small></h6>
+                            <h6 class="m-0" style="color: white;">+91 94477 09944</h6>
+                        </a>
+                        </div>
+                    </div>
+                </div> -->
+            </nav>
+        </div>
+      <div class="titles">
+        <h2>Welcome to</h2>
+        <h1>Pathanamthitta</h1>
+        <h3>Where Nature meets Serenity</h3>
+        <button >Learn More</button>
+      </div>
+      <div class="change-buttons">
+        <p id="Place-Name">Place-Name</p>
+        <div>
+          <div class="swiper2-button-prev slider-arrow">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+          <div class="MainImageOptions"></div>
+          <div class="swiper2-button-next slider-arrow">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+     </div>
+  </section>
+  <section class="about">
+      <img src="Assets/Pta.jpg" alt="" srcset="">
+    <div>
+      <h1>Reasons to Visit Pathanamthitta</h1>
+      <p>Pathanamthitta is where nature’s calmness blends beautifully with spirituality, offering visitors a sense of peace that’s truly unique. The district is renowned for its rich traditions, from the world-famous Aranmula Kannadi (metal mirror) to the intricate Pathanamthitta mural paintings. Together, these cultural treasures and serene landscapes create an experience that stays with you forever.</p>
+    </div>
+  </section>
+  <section class="destignation">
+    <h1>Top Destinations</h1>
+    <div class="images">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="Assets/Aranmula.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="Assets/Adavi.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="Assets/KakkiDam.webp" alt="" srcset=""></div>
+        </div>
+        <div class="slider-control-Panel">
+          <div class="swiper-button-prev slider-arrow">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+          <div class="theobjects"></div>
+          <div class="swiper-button-next slider-arrow">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 id="Place-Title">Aranmula</h2>
+    <p id="Place-Desc">Aranmula is a heritage village in Pathanamthitta, Kerala, famous for its ancient Aranmula Parthasarathy Temple, the unique Aranmula Kannadi (metal mirror), and the vibrant Vallamkali (snake boat race) held during Onam. Known for its rich culture, art, and traditions, Aranmula is a spiritual and cultural hub that attracts visitors from around the world.</p>
+    <button onclick="Button()">Learn More</button>
+  </section>
+  <script src="script.js"></script>
+  
+</body>
+</html>
